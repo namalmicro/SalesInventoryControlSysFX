@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+
+
+<BorderPane fx:id="itemInquiryBorderPane" prefHeight="386.0" prefWidth="478.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.microcars.ItemInquiryController">
+
+
+<left>
+
+
+<GridPane alignment="top_center" hgap="10" vgap="10"
+gridLinesVisible="false" fx:id="gridPaneItemMaster">
+
+<padding>
+<Insets top="20" bottom="20" left="20" right="20"/>
+</padding> 
+
+<Label text="Part Number" GridPane.rowIndex="0" GridPane.columnIndex="0"/>	
+<TextField GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+<Button GridPane.rowIndex="0" GridPane.columnIndex="2">
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/search.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+</Button>
+<Label text="Item Description" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+<TextField GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.columnSpan="3"/>
+<Label text="Sell Price" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+<TextField GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+<Label text="Available Qty" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+<TextField GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+
+<Label text="Remarks" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+<TextField GridPane.rowIndex="3" GridPane.columnIndex="1" GridPane.columnSpan="3"/>
+
+<Label text="Vehicle Make" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+<TextField GridPane.rowIndex="4" GridPane.columnIndex="1" prefWidth="215"/>
+
+<Label text="Category" GridPane.rowIndex="4" GridPane.columnIndex="2"/>
+<TextField GridPane.rowIndex="4" GridPane.columnIndex="3" prefWidth="215"/>
+
+
+
+</GridPane>
+
+</left>
+
+	
+
+
+</BorderPane>
+
+
+	

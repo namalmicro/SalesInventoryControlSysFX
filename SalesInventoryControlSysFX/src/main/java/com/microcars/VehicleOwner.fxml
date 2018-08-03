@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane fx:id="vehicleOwnerBorderPane" prefHeight="386.0" prefWidth="478.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.microcars.VehicleOwnerController">
+
+
+<top>
+
+<VBox>
+
+<ToolBar fx:id="toolbar">
+	
+	<HBox spacing="7">
+	
+	<padding>
+	<Insets bottom="0" left="0"/>
+	</padding>
+	
+	<Button text="New" prefWidth="90">
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/Add.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+	</Button>
+	
+	<Button text="Edit" prefWidth="90">
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/Modify.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+	</Button>
+	
+	<Button text="Delete" prefWidth="90">
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/Delete.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+	</Button>
+	
+	<Button text="Exit" prefWidth="90">
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/Close.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+	</Button>
+	
+	<Button text="Previous" prefWidth="90">
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/Back.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+	</Button>
+	
+	<Button text="Next" prefWidth="90">
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/Forward.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+	</Button>
+	
+	<Button text="Save" prefWidth="90">
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/Save.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+	</Button>
+	
+	
+	</HBox>
+	
+	</ToolBar>
+
+</VBox>
+
+</top>
+
+<left>
+
+
+<GridPane alignment="top_center" hgap="10" vgap="10"
+gridLinesVisible="false" fx:id="gridPaneItemMaster">
+
+<padding>
+<Insets top="20" bottom="20" left="20" right="20"/>
+</padding> 
+
+<Label text="Owner ID" GridPane.rowIndex="0" GridPane.columnIndex="0"/>	
+<TextField GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+<Button GridPane.rowIndex="0" GridPane.columnIndex="2">
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/search.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+</Button>
+
+<Label text="Owner Title" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+<TextField GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+<Label text="Name" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+<TextField GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.columnSpan="3"/>
+
+<Label text="Contact Number" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+<TextField GridPane.rowIndex="3" GridPane.columnIndex="1" prefWidth="250"/>
+
+<Label text="Email" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+<TextField GridPane.rowIndex="3" GridPane.columnIndex="3" prefWidth="250"/>
+
+<Label text="National ID" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+<TextField GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+<Label text="Street Address" wrapText="false" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+<TextField GridPane.rowIndex="5" GridPane.columnIndex="1" GridPane.columnSpan="3"/>
+
+<Label text="City" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+<TextField GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+<Label text="Postal Code" GridPane.rowIndex="6" GridPane.columnIndex="2"/>
+<TextField GridPane.rowIndex="6" GridPane.columnIndex="3"/>
+
+
+
+</GridPane>
+
+</left>
+
+
+
+
+
+</BorderPane>
+

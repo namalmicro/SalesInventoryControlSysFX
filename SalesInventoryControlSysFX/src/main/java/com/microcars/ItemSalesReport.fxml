@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="itemSalesReportBorderPane" prefHeight="386.0" prefWidth="478.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.microcars.ItemSalesReportController">
+
+<top>
+
+<Button text="Hello"></Button>
+
+</top>
+
+
+
+
+</BorderPane>
+

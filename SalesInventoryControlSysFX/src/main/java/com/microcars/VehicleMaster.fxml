@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.GridPane?>
+
+<BorderPane fx:id="vehicleMasterBorderPane" prefHeight="386.0" prefWidth="478.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.microcars.VehicleMasterController">
+
+<top>
+
+<VBox>
+
+<ToolBar fx:id="toolbar">
+	
+	<HBox spacing="7">
+	
+	<padding>
+	<Insets bottom="0" left="0"/>
+	</padding>
+	
+	<Button text="New" prefWidth="90">
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/Add.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+	</Button>
+	
+	<Button text="Edit" prefWidth="90">
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/Modify.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+	</Button>
+	
+	<Button text="Delete" prefWidth="90">
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/Delete.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+	</Button>
+	
+	<Button text="Exit" prefWidth="90">
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/Close.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+	</Button>
+	
+	<Button text="Previous" prefWidth="90">
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/Back.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+	</Button>
+	
+	<Button text="Next" prefWidth="90">
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/Forward.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+	</Button>
+	
+	<Button text="Save" prefWidth="90">
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/Save.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+	</Button>
+	
+	
+	</HBox>
+	
+	</ToolBar>
+
+</VBox>
+
+</top>
+
+<left>
+
+
+<GridPane alignment="top_center" hgap="10" vgap="10"
+gridLinesVisible="false" fx:id="gridPaneItemMaster">
+
+<padding>
+<Insets top="20" bottom="20" left="20" right="20"/>
+</padding> 
+
+<Label text="Vehicle RegNumber" GridPane.rowIndex="0" GridPane.columnIndex="0"/>	
+<TextField GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+<Button GridPane.rowIndex="0" GridPane.columnIndex="2">
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/search.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+</Button>
+
+<Label text="Vehicle Number" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+<TextField GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="215"/>
+
+<Label text="Manufature Year" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+<TextField GridPane.rowIndex="1" GridPane.columnIndex="3" prefWidth="215"/>
+
+<Label text="Chassis Number" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+<TextField GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+<Label text="Engine Number" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+<TextField GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+
+<Label text="BodyColor Code" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+<TextField GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+<Label text="Body Color" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+<TextField GridPane.rowIndex="3" GridPane.columnIndex="3"/>
+
+<Label text="Fuel Type" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+<TextField GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+<Label text="Vehicle Mileage" GridPane.rowIndex="4" GridPane.columnIndex="2"/>
+<TextField GridPane.rowIndex="4" GridPane.columnIndex="3"/>
+
+<Label text="Vehicle Make" wrapText="false" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+<TextField GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+<Label text="Vehicle Model" wrapText="false" GridPane.rowIndex="5" GridPane.columnIndex="2"/>
+<TextField GridPane.rowIndex="5" GridPane.columnIndex="3"/>
+
+<Label text="Vehicle Category" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+<TextField GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+<Label text="Vehicle Remarks" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+<TextField GridPane.rowIndex="7" GridPane.columnIndex="1" GridPane.columnSpan="3"/>
+
+</GridPane>
+
+</left>
+
+
+
+
+</BorderPane>
+
+<!--  
+private long vehicleRegNumber;
+	private String vehicleNumber;
+	private String chassisNumber;
+	private String engineNumber;
+	private String bodyColorCode;
+	private String bodyColor;
+	private String manufatureYear;
+	private String fuelType;
+	private String vehicleMileage;
+	private String vehicleRemarks;
+	private VehicleCategory vehicleCategory;
+	private VehicleMake vehicleMake;
+	private VehicleModel vehicleModel;
+	
+-->
+

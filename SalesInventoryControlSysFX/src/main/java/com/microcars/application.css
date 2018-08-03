@@ -1,0 +1,70 @@
+.tree-cell:selected , .tree-cell:hover{
+    -fx-font-weight: bold ;
+    -fx-text-fill: white ;
+    -fx-background-color: #D8677D;
+}
+
+
+.tree-cell {
+    -fx-background-color:#E2CBD0;
+    -fx-font-weight: bold ;
+    -fx-text-fill:#383634; 
+}
+
+.tree-view:focused{
+	-fx-background-color:#E2CBD0;
+	
+}
+
+#toolbar{
+	
+	 -fx-background-color:#252523;
+}
+
+#mainborderpane{
+	-fx-background-color: #e6e9f7;
+}
+
+#tooltip{
+	-fx-font-size:12px;
+	
+}
+
+.tree-cell:expanded{
+    -fx-font-size:15px;
+    -fx-text-fill: #514e49;
+    
+}
+
+.tree-cell:expanded:selected, .tree-cell:expanded:hover{
+    -fx-font-size:15px;
+    -fx-text-fill: #514e49;
+    -fx-font-weight: bold ;
+    -fx-text-fill: white ;
+    -fx-background-color: #353e42;
+    
+}
+
+.menu-item:focused, .menu:hover, .menu:showing {
+     -fx-background-color: #D8677D;
+}
+
+
+#itemMasterBorderPane, #vehicleMasterBorderPane, #itemCategoryBorderPane,
+#supplierMasterBorderPane, #vehicleOwnerBorderPane, #vehicleCategoryBorderPane,
+#vehicleModelBorderPane, #itemModelBorderPane, #vehicleMakeBorderPane,
+#itemInquiryBorderPane, #vehicleDeliveryRecordBorderPane, #purchaseOrderBorderPane{
+	
+	-fx-background-color:#E2CBD0;
+	
+}
+
+.text-field:focused, .button:focused{  
+  	-fx-faint-focus-color: transparent;
+    -fx-focus-color:#D8677D;
+}
+
+
+
+
+

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane fx:id="mainBorderPane" prefHeight="386.0" prefWidth="478.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.microcars.MainController">
+	
+	<top>
+	
+	<VBox>
+	
+	<MenuBar fx:id="menubar">
+	
+	
+	<Menu text="File">
+	<items>
+	<MenuItem text="New" />
+	<SeparatorMenuItem /> 
+	<MenuItem text="Exit" />
+	</items>
+	
+	</Menu>
+	
+	<Menu text="Warehouse">
+	<items>
+	<MenuItem text="Item Master File" onAction="#viewItemMasterFileGUI"/>
+	<MenuItem text="Item Category" onAction="#viewItemCategoryFileGUI"/>
+	<MenuItem text="Item Models" onAction="#viewItemModelFileGUI"/>
+	<SeparatorMenuItem /> 
+	<MenuItem text="Item Inquiry" onAction="#viewItemInquiryGUI"/>
+	</items>
+	
+	</Menu>
+	
+	<Menu text="Procurement">
+	<items>
+	<MenuItem text="Purchase Order" onAction="#viewPurchaseOrderGUI"/>
+	<MenuItem text="Good Received Note" onAction="#viewGoodReceivedNoteGUI"/>
+	<SeparatorMenuItem /> 
+	<MenuItem text="Supplier Master File" onAction="#viewSupplierMasterFileGUI"/>
+	</items>
+	
+	</Menu>
+	
+	<Menu text="Production">
+	<items>
+	<MenuItem text="Vehicle Master File" onAction="#viewVehicleMasterFileGUI"/>
+	<MenuItem text="Vehicle Category" onAction="#viewVehicleCategoryFileGUI"/>
+	<MenuItem text="Vehicle Model" onAction="#viewVehicleModelFileGUI"/>
+	<MenuItem text="Vehicle Make" onAction="#viewVehicleMakeFileGUI"/>
+	<SeparatorMenuItem /> 
+	<MenuItem text="Vehicle Owner" onAction="#viewVehicleOwnerFileGUI"/>
+	<MenuItem text="Vehicle Delivery Record" onAction="#viewVehicleDeliveryRecordGUI"/>
+	</items>
+	
+	</Menu>
+	
+	<Menu text="Sales">
+	<items>
+	<MenuItem text="Sales Invoice" onAction="#viewSalesInvoiceGUI"/>
+	</items>
+	
+	</Menu>
+	
+	<Menu text="Reports">
+	<items>
+	<Menu text="Finance">
+	<items>
+    <MenuItem text="Item Sales Report" onAction="#viewItemSalesReportGUI"/>
+    </items>
+	
+	</Menu>
+	
+	<SeparatorMenuItem />
+    <Menu text="Other">
+    <items>
+    <MenuItem text="Vehicle Delivery Report" onAction="#viewVehicleDeliveryReportGUI"/>
+    <MenuItem text="Other Reports" />
+    </items>
+    </Menu>
+	</items>
+	
+	</Menu>
+	
+	<Menu text="Help">
+	<items>
+	<MenuItem text="Help Contents"/>
+	</items>
+	
+	</Menu>
+	
+	
+	
+	</MenuBar>
+	
+	
+	
+	<ToolBar fx:id="toolbar">
+	
+	<HBox spacing="10">
+	
+	<padding>
+	<Insets bottom="0" left="0"/>
+	</padding>
+	
+	<Button onAction="#viewItemInquiryGUI">
+	<tooltip>
+	<Tooltip fx:id="tooltip" text="Item Inquiry"/>
+	</tooltip>
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/Find.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+	</Button>
+	
+	<Button onAction="#viewPurchaseOrderGUI">
+	<tooltip>
+	<Tooltip fx:id="tooltip" text="Purchase Order"/>
+	</tooltip>
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/Shopping-cart.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+	</Button>
+	
+	<Button onAction="#viewGoodReceivedNoteGUI">
+	<tooltip>
+	<Tooltip fx:id="tooltip" text="Good Received Note"/>
+	</tooltip>
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/Notes.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+	</Button>
+	
+	<Button onAction="#viewVehicleDeliveryRecordGUI">
+	<tooltip>
+	<Tooltip  fx:id="tooltip" text="Vehicle Delivery Record"/>
+	</tooltip>
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/Delivery.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+	</Button>
+	
+	<Button onAction="#viewSalesInvoiceGUI">
+	<tooltip>
+	<Tooltip fx:id="tooltip" text="Sales Invoice"/>
+	</tooltip>
+	<graphic>
+	<ImageView>
+	<image>
+	<Image url="@/img/sale-invoice.png"/>
+	</image>
+	</ImageView>
+	</graphic>
+	</Button>
+	
+	</HBox>
+	
+	</ToolBar>
+	
+	
+	
+	
+	</VBox>
+	
+	
+	
+	
+	
+	</top>
+	
+	<left>
+	
+	 <VBox prefWidth="200.0" BorderPane.alignment="TOP_LEFT">
+ 
+            
+            <TreeView fx:id="treeView" editable="true" onMouseClicked="#mouseClick" prefHeight="650.0" prefWidth="200.0">
+            </TreeView>
+            
+     
+            
+            
+          
+          
+      </VBox>
+
+	
+	</left>
+	
+   
+   
+   
+   <center>
+   
+   <AnchorPane>
+    <ImageView>
+    <image>
+	<Image url="@/img/car-back6.jpg"/>
+	</image>
+    </ImageView>
+      
+    </AnchorPane>  
+      
+      
+   </center>
+   
+   
+   <right>
+      
+      
+      
+      
+   </right>
+	
+	
+	
+	
+	
+</BorderPane>
